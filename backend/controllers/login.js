@@ -13,6 +13,7 @@ const login=(req,res)=>{
 		}
 		if(user){
 			token=user.generateJwt();
+			// res.send("Created");
 			res.status(200).json({token});
 		}
 		else{
