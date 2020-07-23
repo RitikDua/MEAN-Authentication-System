@@ -22,6 +22,8 @@ export class UserService {
 		if(this.isLoggedIn())
 		{
 			console.log("isLoggedIn")
+
+			this.router.navigateByUrl("/profile");	
 		}
 		else{
 			this.router.navigateByUrl("/login");
