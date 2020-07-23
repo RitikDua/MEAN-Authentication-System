@@ -1,0 +1,42 @@
+
+<div class="main-div">
+
+<mat-card class="example-card">
+  <mat-card-header>
+
+    <div class="login-box-header">
+        
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <form class="example-form">
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+            <input matInput id="name" name="name" placeholder="Username"  [(ngModel)]="credentials.name"required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+            <input matInput placeholder="email"  type="email" id="email" name="email" [(ngModel)]="credentials.email"required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+        <td><mat-form-field class="example-full-width">
+          <input matInput type="password" id="password" name="password" placeholder="Password" [(ngModel)]="credentials.password" minlength=6 required>
+        </mat-form-field></td>
+      </tr></table>
+    </form>
+    <!-- <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner> -->
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="onRegisterSubmit()" color="primary">Register</button>
+    <p class="alert danger" *ngIf="errorMsg()">username or email is already exist</p>
+
+	<p > Already a member? Please<a routerLink="/login"> log in</a> instead</p>
+  </mat-card-actions>
+</mat-card>

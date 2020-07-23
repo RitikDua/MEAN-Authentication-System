@@ -1,0 +1,24 @@
+<div *ngIf="exist">
+	
+
+<div class="main-div">
+
+<mat-card class="example-card">
+  <mat-card-header>
+<div id="profilePic" class="container text-center"> <mat-icon aria-hidden="false" aria-label="how to reg icon"
+        style="width:100px;font-size: 100px;"color="primary">how_to_reg</mat-icon>
+    </div><br>
+    
+  </mat-card-header>
+  <mat-card-content>
+ <h1>{{name}}</h1>
+ <h3>{{email}}</h3>
+
+  </mat-card-content>
+  <mat-card-actions>
+    
+<button mat-raised-button color="primary" (click)="logout()">Log out</button>
+  </mat-card-actions>
+</mat-card>
+</div>
+</div>

@@ -1,0 +1,16 @@
+#profilePic{
+
+	border-radius: 50%;
+	text-align:center;
+		margin-top: 10vh;
+        float: none;
+        margin: 0 auto;
+	height:100px;
+	width:100px;
+}
+.main-div{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
